@@ -1,0 +1,36 @@
+### Test GET /
+GET http://localhost:5001/
+Accept: application/json
+
+### Test all users
+GET http://localhost:5001/api/auth/alluser
+Accept: application/json
+
+### Test POST /signup
+POST http://localhost:5001/api/auth/signup
+Content-Type: application/json
+
+{
+    "username": "test-user2",
+    "email": "test2@mail.com",
+    "password": "dummypass"
+}
+
+### Test GET /questions
+GET http://localhost:5001/api/questions
+Accept: application/json
+
+
+### Test POST /questions
+POST http://localhost:5001/api/questions
+Content-Type: application/json
+
+{
+    "text": "QUESTION1",
+    "difficulty": "LVL2",
+    "options": ["OPTION1", "OPTION2", "OPTION3"],
+    "correct_answer": "OPTION2"
+}
+
+
+
