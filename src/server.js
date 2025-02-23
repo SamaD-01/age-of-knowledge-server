@@ -27,6 +27,10 @@ const swaggerOptions = {
                 url: "http://localhost:5001/",
                 description: "Local Development server"
             },
+            {
+                url: "https://age-of-knowledge-server.onrender.com/",
+                description: "Development server"
+            },
         ],  
     },
     apis: ['./src/routes/*.route.js'], 
@@ -47,4 +51,5 @@ const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log("server is running on PORT:" + PORT);
+    console.log("swagger is running on http://localhost:5001/api-docs");
 });

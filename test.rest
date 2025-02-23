@@ -31,6 +31,3 @@ Content-Type: application/json
     "options": ["OPTION1", "OPTION2", "OPTION3"],
     "correct_answer": "OPTION2"
 }
-
-
-
