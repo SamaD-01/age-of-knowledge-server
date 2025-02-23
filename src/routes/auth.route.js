@@ -25,9 +25,25 @@ router.get("/alluser", getAllUsersTest);
 /**
  * @swagger
  * /api/auth/signup:
- *   get:
+ *   post:
  *     summary: Create a new user
  *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               username:
+ *                 type: string
+ *                 example: "test-user2"
+ *               email:
+ *                 type: string
+ *                 example: "test2@mail.com"
+ *               password:
+ *                 type: string
+ *                 example: "dummypass"
  *     responses:
  *       200:
  *         description: User created successfully
