@@ -5,6 +5,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth.route');
 const questionRoutes = require('./routes/question.route');
+const gameRoutes = require('./routes/game.route');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
@@ -46,6 +47,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/questions", questionRoutes);
+app.use("/api/games", gameRoutes);
 
 const PORT = process.env.PORT;
 
